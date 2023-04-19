@@ -2906,7 +2906,8 @@ body .search-modal .close:hover {
 .rs-about.style3 .about-img .about-widget .counter-part {
   padding: 26px 40px 29px 40px;
   background-color: transparent;
-  background-image: linear-gradient(120deg, #0610FF 32%, #ffd600 100%);
+  /* background-image: linear-gradient(120deg, #0610FF 32%, #ffd600 100%); */
+  background-color: #ffd600;
   border-radius: 5px 5px 5px 5px;
 }
 .rs-about.style3 .about-img .about-widget .counter-part .rs-count {
@@ -6322,7 +6323,9 @@ Video CSS
   margin: -10px;
 }
 .rs-blog.blog-main-home.blog-style2 .blog-item .image-wrap .post-categories li a {
-  background-image: linear-gradient(150deg, #1c6c28 35%, #ffd600 100%);
+  background-color: #1118B6;
+  /* background-image: linear-gradient(150deg, #1c6c28 35%, #ffd600 100%); */
+  
 }
 .rs-blog.blog-main-home.blog-style2 .blog-item .blog-content .blog-title a:hover,
 .rs-blog.blog-main-home.blog-style2 .blog-item .blog-content .blog-meta .date i,
@@ -6915,13 +6918,14 @@ Video CSS
 }
 .rs-testimonial.testimonial-style3 .testi-bg {
   /* background-color: #0A4112DB; */
-  background-color: #1118B6;
+  /* background-color: #1118B6; */
   opacity: 0.91;
 }
 .rs-testimonial.testimonial-style3 .testi-bg .testi-item {
   position: relative;
   margin: 0 -15px 0 0;
-  background-color: #012C08;
+  /* background-color: #012C08; */
+  background-color: #1118B6;
   padding: 30px 40px 60px 40px;
 }
 .rs-testimonial.testimonial-style3 .testi-bg .testi-item .item-content span img {
