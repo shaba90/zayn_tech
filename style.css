@@ -7369,7 +7369,7 @@ Video CSS
 }
 #clenia-load .preload-wrap img {
   animation: loader-zoom 1s linear infinite alternate;
-  max-width: 90px;
+  max-width: 200px;
 }
 .loader-clenia {
   position: absolute;

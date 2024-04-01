@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- favicon -->
 		<link rel="apple-touch-icon" href="apple-touch-icon.html">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/MacBook Air - 4.png">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/LOGO-ICON.png">
 		<!-- Bootstrap v4.4.1 css -->
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 		<!-- font-awesome css -->
@@ -195,11 +195,11 @@
 								<div class="col-cell">
 									<div class="expand-btn-inner">
 										<ul>
-											<li class="sidebarmenu-search">
+											<!-- <li class="sidebarmenu-search">
 												<a class="hidden-xs rs-search" data-bs-toggle="modal" data-bs-target="#searchModal" href="#">
 													<i class="fi fi-rr-search"></i>
 												</a>
-											</li>
+											</li> -->
 											<li class="nav-link">
 												<a id="nav-expander" class="nav-expander bar" href="#">
 													<span class="dot-hum"></span>
@@ -498,7 +498,8 @@
 			                            <div class="btn-part">                                            
 			                               	<div class="form-group mb-0">
                                                 <p class="submit-btn submit-btn3">
-                                                	<input type="submit" value="Submit Now">
+													<input type="submit" onclick="sendwhatsapp();">
+                                                	<!-- <input type="submit" value="Submit Now"> -->
                                                 </p>
                                             </div>
 			                            </div> 
@@ -508,7 +509,8 @@
 			            </div>
 			        </div>
 			        <div class="map-canvas pt-120 md-pt-80">
-			            <iframe src="https://maps.google.com/maps?q=harmony Estate Lekki-Ajah"></iframe>
+			            <!-- <iframe src="https://maps.google.com/maps?q=harmony Estate Lekki-Ajah"></iframe> -->
+						<iframe src="https://developers.google.com/maps/documentation/embed/get-api-key#add_key"></iframe>
 			        </div> 
 			    </div> 
 			</div>
@@ -673,6 +675,27 @@
 		<script src="assets/js/contact.form.js"></script>
 		<!-- main js -->
 		<script src="assets/js/main.js"></script>
+		<script>
+			function sendwhatsapp(){
+				var phonenumber = "+2348068323293";
+				var name = document.querySelector('.name').value;
+				var email = document.querySelector('.email').value;
+				var phone = document.querySelector('.phone').value;
+				var yourService = document.querySelector('.yourservices').value;
+
+				var url ="https://wa.me/" + phonenumber + "?text="
+
+
+				+"*Name :* " +name+"%0a"
+				+"*Email :* " +email+"%0a"
+				+"*country :* " +country+"%0a"
+				+"*Message:* " +message+"%0a%0a"
+
+				+"this is me"
+
+				window.open(url, '_blank').focus();
+			}
+		</script>
 	</body>
 
 <!-- Mirrored from devsdesign.net/products/html/clenia/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2023 14:01:26 GMT -->
