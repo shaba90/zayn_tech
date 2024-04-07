@@ -472,17 +472,17 @@
 			                        <fieldset>
 			                            <div class="row">
 			                                <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-			                                    <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
+			                                    <input class="from-control" type="text" class="name" id="name" name="name" placeholder="Name" required="">
 			                                </div> 
 			                                <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-			                                    <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
+			                                    <input class="from-control" type="text" class="email" id="email" name="email" placeholder="E-Mail" required="">
 			                                </div>   
 			                                <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-			                                    <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+			                                    <input class="from-control" type="text" class="phone" id="phone" name="phone" placeholder="Phone Number" required="">
 			                                </div>   
 			                                <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
 			                                    <select name="consultation" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
-                									<option value="Your Service">Your Service</option>
+                									<option value="Your Service" class="yourservice">Your Service</option>
 		                                                	<option value="House Cleaning">Website developent</option>
 		                                                	<option value="Kitchen Cleaning">E-commerce</option>
 		                                                	<option value="Toilet Cleaning">Mobile App</option>
@@ -492,14 +492,13 @@
                 								</select>
 			                                </div>
 			                                <div class="col-lg-12 mb-30">
-			                                    <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
+			                                    <textarea class="from-control" class="message" id="message" name="message" placeholder="Your message Here" required=""></textarea>
 			                                </div>
 			                            </div>
 			                            <div class="btn-part">                                            
 			                               	<div class="form-group mb-0">
                                                 <p class="submit-btn submit-btn3">
-													<input type="submit" onclick="sendwhatsapp();">
-                                                	<!-- <input type="submit" value="Submit Now"> -->
+													<input type="submit" value="Submit Now">
                                                 </p>
                                             </div>
 			                            </div> 
@@ -508,10 +507,10 @@
 			                </div>
 			            </div>
 			        </div>
-			        <div class="map-canvas pt-120 md-pt-80">
-			            <!-- <iframe src="https://maps.google.com/maps?q=harmony Estate Lekki-Ajah"></iframe> -->
+			        <!-- <div class="map-canvas pt-120 md-pt-80">
+			            <iframe src="https://maps.google.com/maps?q=harmony Estate Lekki-Ajah"></iframe>
 						<iframe src="https://developers.google.com/maps/documentation/embed/get-api-key#add_key"></iframe>
-			        </div> 
+			        </div>  -->
 			    </div> 
 			</div>
 			<!-- Contact Section End -->
@@ -675,27 +674,28 @@
 		<script src="assets/js/contact.form.js"></script>
 		<!-- main js -->
 		<script src="assets/js/main.js"></script>
-		<script>
+		<!-- <script>
 			function sendwhatsapp(){
-				var phonenumber = "+2348068323293";
+				var phonenumber = "+2348073900332";
 				var name = document.querySelector('.name').value;
 				var email = document.querySelector('.email').value;
 				var phone = document.querySelector('.phone').value;
 				var yourService = document.querySelector('.yourservices').value;
+				var message = document.querySelector('.message').value;
 
 				var url ="https://wa.me/" + phonenumber + "?text="
 
 
 				+"*Name :* " +name+"%0a"
 				+"*Email :* " +email+"%0a"
-				+"*country :* " +country+"%0a"
+				+"*Phone :* " +phone+"%0a"
 				+"*Message:* " +message+"%0a%0a"
 
 				+"this is me"
 
 				window.open(url, '_blank').focus();
 			}
-		</script>
+		</script> -->
 	</body>
 
 <!-- Mirrored from devsdesign.net/products/html/clenia/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2023 14:01:26 GMT -->
